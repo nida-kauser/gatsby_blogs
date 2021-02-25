@@ -17,9 +17,19 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "@contentful/rich-text-react-renderer": "^13.2.0",
+    "gatsby-remark-images": "^3.0.10",
+    "gatsby-remark-relative-images": "^0.2.2",
+    "gatsby-source-contentful": "^2.0.47",
+    "gatsby-plugin-sass": "^3.2.0",
+    "gatsby-transformer-remark": "^2.16.0",
+    "node-gyp-build": "^4.2.3",
+    "sass": "^1.32.8",
+    "node-sass": "^4.11.0"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "prettier": "2.2.1"
   },
   "keywords": [
@@ -28,7 +38,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -36,10 +46,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "type": "git"
   },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  "bugs": {}
 }
